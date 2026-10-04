@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "release": "1.2.0",
+  "author": "Aura Yavary",
+  "studies": [
+    {
+      "id": "effect_semantics_suite",
+      "entrypoint": "python experiments/effect_semantics_suite.py",
+      "n_per_method_scenario": 40,
+      "paired": true,
+      "seed_policy": "seed=i paired across methods within each scenario",
+      "primary_metrics": [
+        "final world-state correctness",
+        "unreconciled external effect rate",
+        "duplicate intended effect rate",
+        "protected external loss rate",
+        "safe abort rate"
+      ],
+      "claim_class": "mechanism study only"
+    },
+    {
+      "id": "tool_contract_matrix",
+      "entrypoint": "python experiments/tool_contract_matrix.py",
+      "n_per_method_contract": 40,
+      "paired": true,
+      "seed_policy": "seed=0..39 paired across methods within each contract",
+      "primary_metrics": [
+        "final world-state correctness",
+        "duplicate intended effect rate",
+        "safe abort rate"
+      ],
+      "claim_class": "capability-boundary diagnostic"
+    },
+    {
+      "id": "pilot",
+      "entrypoint": "python experiments/run_pilot.py",
+      "n_per_method": 120,
+      "paired": true,
+      "seed_policy": "seed=7+i paired by task index",
+      "primary_metrics": [
+        "task success",
+        "recovery rate",
+        "recovery harm",
+        "progress preservation"
+      ],
+      "claim_class": "deterministic smoke/mechanism study"
+    },
+    {
+      "id": "external_effect_recovery",
+      "entrypoint": "python experiments/external_effect_recovery.py",
+      "n_per_method": 60,
+      "paired": true,
+      "seed_policy": "same task/fault indices across methods",
+      "primary_metrics": [
+        "task success",
+        "external reconciliation",
+        "compensation cost",
+        "progress preservation"
+      ],
+      "claim_class": "deterministic focused mechanism study"
+    },
+    {
+      "id": "chromium_mechanism_microbench",
+      "entrypoint": "python experiments/browser_microbench.py",
+      "n_per_method_scenario": 2,
+      "paired": true,
+      "seed_policy": "seed=i paired across methods within each browser fault; deterministic planner",
+      "primary_metrics": [
+        "task success",
+        "recovery success",
+        "duplicate intended effects",
+        "safe abort"
+      ],
+      "claim_class": "real-Chromium mechanism microbenchmark; not a frontier-model evaluation"
+    },
+    {
+      "id": "policy_replay_smoke",
+      "entrypoint": "python experiments/policy_replay_smoke.py",
+      "n_per_method": 20,
+      "paired": true,
+      "seed_policy": "seed=i; deterministic recorded policy fixture",
+      "primary_metrics": [
+        "task success",
+        "recovery success",
+        "provider-boundary integrity"
+      ],
+      "claim_class": "provider-interface/replay validation; explicitly not model-backed"
+    },
+    {
+      "id": "chromium_effect_semantics",
+      "entrypoint": "python experiments/browser_effect_semantics.py",
+      "n_per_method_scenario": 2,
+      "paired": true,
+      "seed_policy": "seed=i; fresh perturbation objects per method/scenario; deterministic planner",
+      "primary_metrics": [
+        "task success",
+        "external reconciliation",
+        "safe abort",
+        "protected external loss"
+      ],
+      "claim_class": "real-Chromium mechanism-transfer diagnostic; explicitly not model-backed"
+    },
+    {
+      "id": "component_ablation_suite",
+      "entrypoint": "python experiments/ablation_suite.py",
+      "n_per_variant_scenario": 40,
+      "paired": true,
+      "seed_policy": "seed=i paired across variants/scenarios; same task and fault specification",
+      "primary_metrics": [
+        "task success",
+        "duplicate intended effect rate",
+        "unreconciled external effect rate",
+        "safe abort rate",
+        "protected external state preservation"
+      ],
+      "claim_class": "deterministic mechanism ablation only"
+    }
+  ],
+  "forbidden_claims": [
+    "SOTA",
+    "production-safe",
+    "real-browser superiority",
+    "frontier-model superiority"
+  ]
+}

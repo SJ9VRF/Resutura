@@ -1,0 +1,442 @@
+{
+  "cases": {
+    "ambiguous_commit": {
+      "base": {
+        "compensation_share_of_recoveries": 0,
+        "detection_events_per_injected_failure": 0.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 2,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0.34237195288961925,
+          1
+        ],
+        "success_rate": 1.0,
+        "unreconciled_external_effect_rate": 0.0
+      },
+      "resutura": {
+        "compensation_share_of_recoveries": 0.0,
+        "detection_events_per_injected_failure": 1.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 2,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 1.0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0.0,
+        "recovery_rate_per_injected": 1.0,
+        "recovery_success_per_attempt": 1.0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0.34237195288961925,
+          1
+        ],
+        "success_rate": 1.0,
+        "unreconciled_external_effect_rate": 0.0
+      },
+      "retry": {
+        "compensation_share_of_recoveries": 0,
+        "detection_events_per_injected_failure": 0.0,
+        "duplicate_intended_effect_rate": 1.0,
+        "injected_failures": 2,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0,
+          0.6576280471103807
+        ],
+        "success_rate": 0.0,
+        "unreconciled_external_effect_rate": 0.0
+      },
+      "rewind": {
+        "compensation_share_of_recoveries": 0,
+        "detection_events_per_injected_failure": 0.0,
+        "duplicate_intended_effect_rate": 1.0,
+        "injected_failures": 2,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0,
+          0.6576280471103807
+        ],
+        "success_rate": 0.0,
+        "unreconciled_external_effect_rate": 0.0
+      },
+      "verify": {
+        "compensation_share_of_recoveries": 0,
+        "detection_events_per_injected_failure": 0.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 2,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0.34237195288961925,
+          1
+        ],
+        "success_rate": 1.0,
+        "unreconciled_external_effect_rate": 0.0
+      }
+    },
+    "concurrent_change_plus_misdirection": {
+      "base": {
+        "compensation_share_of_recoveries": 0,
+        "detection_events_per_injected_failure": 0.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 4,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0,
+          0.6576280471103807
+        ],
+        "success_rate": 0.0,
+        "unreconciled_external_effect_rate": 1.0
+      },
+      "resutura": {
+        "compensation_share_of_recoveries": 1.0,
+        "detection_events_per_injected_failure": 0.5,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 4,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 1.0,
+        "mean_recovery_steps": 2,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0.0,
+        "recovery_rate_per_injected": 0.5,
+        "recovery_success_per_attempt": 1.0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0.34237195288961925,
+          1
+        ],
+        "success_rate": 1.0,
+        "unreconciled_external_effect_rate": 0.0
+      },
+      "retry": {
+        "compensation_share_of_recoveries": 0,
+        "detection_events_per_injected_failure": 0.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 4,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0,
+          0.6576280471103807
+        ],
+        "success_rate": 0.0,
+        "unreconciled_external_effect_rate": 1.0
+      },
+      "rewind": {
+        "compensation_share_of_recoveries": 0,
+        "detection_events_per_injected_failure": 0.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 4,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0,
+          0.6576280471103807
+        ],
+        "success_rate": 0.0,
+        "unreconciled_external_effect_rate": 1.0
+      },
+      "verify": {
+        "compensation_share_of_recoveries": 0,
+        "detection_events_per_injected_failure": 0.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 4,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0,
+          0.6576280471103807
+        ],
+        "success_rate": 0.0,
+        "unreconciled_external_effect_rate": 1.0
+      }
+    },
+    "misdirected_commit": {
+      "base": {
+        "compensation_share_of_recoveries": 0,
+        "detection_events_per_injected_failure": 0.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 2,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0,
+          0.6576280471103807
+        ],
+        "success_rate": 0.0,
+        "unreconciled_external_effect_rate": 1.0
+      },
+      "resutura": {
+        "compensation_share_of_recoveries": 1.0,
+        "detection_events_per_injected_failure": 1.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 2,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 1.0,
+        "mean_recovery_steps": 2,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0.0,
+        "recovery_rate_per_injected": 1.0,
+        "recovery_success_per_attempt": 1.0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0.34237195288961925,
+          1
+        ],
+        "success_rate": 1.0,
+        "unreconciled_external_effect_rate": 0.0
+      },
+      "retry": {
+        "compensation_share_of_recoveries": 0,
+        "detection_events_per_injected_failure": 0.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 2,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0,
+          0.6576280471103807
+        ],
+        "success_rate": 0.0,
+        "unreconciled_external_effect_rate": 1.0
+      },
+      "rewind": {
+        "compensation_share_of_recoveries": 0,
+        "detection_events_per_injected_failure": 0.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 2,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0,
+          0.6576280471103807
+        ],
+        "success_rate": 0.0,
+        "unreconciled_external_effect_rate": 1.0
+      },
+      "verify": {
+        "compensation_share_of_recoveries": 0,
+        "detection_events_per_injected_failure": 0.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 2,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0,
+          0.6576280471103807
+        ],
+        "success_rate": 0.0,
+        "unreconciled_external_effect_rate": 1.0
+      }
+    },
+    "noncompensatable_commit": {
+      "base": {
+        "compensation_share_of_recoveries": 0,
+        "detection_events_per_injected_failure": 0.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 2,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0,
+          0.6576280471103807
+        ],
+        "success_rate": 0.0,
+        "unreconciled_external_effect_rate": 1.0
+      },
+      "resutura": {
+        "compensation_share_of_recoveries": 0.0,
+        "detection_events_per_injected_failure": 1.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 2,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 1.0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0.0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0.0,
+        "safe_abort_rate": 1.0,
+        "success_ci95": [
+          0,
+          0.6576280471103807
+        ],
+        "success_rate": 0.0,
+        "unreconciled_external_effect_rate": 1.0
+      },
+      "retry": {
+        "compensation_share_of_recoveries": 0,
+        "detection_events_per_injected_failure": 0.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 2,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0,
+          0.6576280471103807
+        ],
+        "success_rate": 0.0,
+        "unreconciled_external_effect_rate": 1.0
+      },
+      "rewind": {
+        "compensation_share_of_recoveries": 0,
+        "detection_events_per_injected_failure": 0.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 2,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0,
+          0.6576280471103807
+        ],
+        "success_rate": 0.0,
+        "unreconciled_external_effect_rate": 1.0
+      },
+      "verify": {
+        "compensation_share_of_recoveries": 0,
+        "detection_events_per_injected_failure": 0.0,
+        "duplicate_intended_effect_rate": 0.0,
+        "injected_failures": 2,
+        "mean_logged_steps": 17,
+        "mean_progress_preservation": 0,
+        "mean_recovery_steps": 0,
+        "n": 2,
+        "protected_external_loss_rate": 0.0,
+        "recovery_harm_rate": 0,
+        "recovery_rate_per_injected": 0.0,
+        "recovery_success_per_attempt": 0,
+        "safe_abort_rate": 0.0,
+        "success_ci95": [
+          0,
+          0.6576280471103807
+        ],
+        "success_rate": 0.0,
+        "unreconciled_external_effect_rate": 1.0
+      }
+    }
+  },
+  "counterfactual_policy": "forked simulator outcomes are diagnostic only and never used for online policy selection",
+  "experiment": "chromium_effect_semantics",
+  "integrity_note": "Real Chromium mechanism-transfer study with deterministic planner. Not model-backed, not OSWorld, not SOTA evidence.",
+  "methodological_note": "Every run receives a fresh perturbation engine; consumed fault objects are never shared across methods.",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "schema_version": "1.0",
+  "seed_policy": "paired deterministic tasks; fresh faults per method; real Chromium DOM; deterministic planner",
+  "source_fingerprint_sha256": "f53036a760f0665ad39c96984983cd821f897c6c441beab1d863d25fdf22ea9e",
+  "trials_declared": 8
+}

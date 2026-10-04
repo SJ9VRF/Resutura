@@ -1,0 +1,5 @@
+variant,compensable_misdirection,ambiguous_commit,concurrent_valid_change,noncompensatable_safe_abort
+full,1,1,1,1
+minus_compensation,0,1,0,1
+minus_contract_awareness,1,0,1,1
+minus_effect_ownership,1,1,0,1

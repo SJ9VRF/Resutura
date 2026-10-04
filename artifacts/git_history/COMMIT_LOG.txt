@@ -1,0 +1,10 @@
+daf5dcd Import verified Resutura v1.0.0 research release
+14bc115 evidence: add experiment journal, failures, decisions, and raw indexes
+786d309 site: expose research-process layer and regression checks
+d526b58 release: prepare v1.1.0 Evidence Layer release
+6463557 evidence: add focused failure traces and plot-ready data
+8bf14f1 audit: centralize release metadata and consistency checks
+48fa142 docs: add reviewer paths, code walkthrough, and falsification roadmap
+5772b2e release: prepare v1.2.0 audit-consistency pass
+55c1238 history: document v1.2 incremental provenance
+61fb1d5 release: exclude git internals from distributable manifest

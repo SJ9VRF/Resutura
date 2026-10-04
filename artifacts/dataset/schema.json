@@ -1,0 +1,22 @@
+{
+  "caveat": "Deterministic synthetic mechanism dataset; not natural user data and not a frontier-model benchmark.",
+  "dataset_name": "Resutura Mechanism Traces",
+  "files": {
+    "tasks.jsonl": "One row per scenario/task pair.",
+    "trajectories.jsonl.gz": "One raw trajectory per method/scenario/task run."
+  },
+  "task_records": 160,
+  "trajectory_records": 800,
+  "trajectory_required_fields": [
+    "scenario",
+    "method",
+    "split",
+    "run_id",
+    "task_id",
+    "seed",
+    "success",
+    "steps",
+    "final_observation"
+  ],
+  "version": "1.0.0"
+}

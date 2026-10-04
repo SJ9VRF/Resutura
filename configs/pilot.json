@@ -1,0 +1,8 @@
+{
+  "suite": "deterministic_research_workflow",
+  "trials_per_agent": 120,
+  "seed": 7,
+  "agents": ["base", "retry", "resutura"],
+  "perturbations": ["close_spreadsheet_tab", "transient_failure", "lose_focus", "switch_active_tab"],
+  "integrity": "Do not generalize these simulator results to frontier-model/browser performance."
+}

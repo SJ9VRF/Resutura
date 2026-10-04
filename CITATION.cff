@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Resutura: Effect-Semantic Recovery for Computer-Use Agents"
+message: "If you use this research artifact, please cite the paper/release and state the evidence tier used."
+type: software
+authors:
+  - family-names: Yavary
+    given-names: Aura
+version: 1.2.0
+date-released: 2026-09-27
+license: MIT
