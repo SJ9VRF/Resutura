@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Resutura — Effect-Semantic Recovery for Computer-Use Agents, by Aura Yavary.">
+<title>Resutura — Aura Yavary</title>
+<style>
+:root{--bg:#080a0e;--panel:#10141b;--panel2:#0c1016;--ink:#f5f3ed;--muted:#9ca3ad;--line:#2a323e;--accent:#d8ff72;--accent2:#8cd7ff;--danger:#ff9e86;--max:1180px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);margin:0;line-height:1.55}a{color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 28px}.nav{position:sticky;top:0;z-index:20;background:rgba(8,10,14,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(42,50,62,.7)}.navin{max-width:var(--max);margin:auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;letter-spacing:-.03em}.navlinks{display:flex;gap:18px;flex-wrap:wrap}.navlinks a{font-size:13px;color:#bcc2ca;text-decoration:none}.hero{padding:92px 0 66px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 82% 8%,rgba(216,255,114,.10),transparent 30%),radial-gradient(circle at 12% 80%,rgba(140,215,255,.08),transparent 28%)}.eyebrow{text-transform:uppercase;letter-spacing:.14em;color:var(--muted);font-size:12px;font-weight:700}h1{font-size:clamp(66px,10vw,118px);line-height:.88;margin:18px 0 20px;letter-spacing:-.065em}h2{font-size:clamp(34px,4vw,52px);letter-spacing:-.04em;line-height:1.05;margin:0 0 22px}h3{font-size:21px;margin:0 0 10px;letter-spacing:-.02em}.lead{font-size:clamp(22px,3vw,31px);line-height:1.35;max-width:900px;color:#ddd9d0;margin:0 0 30px}.heroresult{font-size:19px;max-width:950px;color:#cfd4dc;border-left:3px solid var(--accent);padding:3px 0 3px 18px;margin:28px 0}.heroresult b{color:var(--accent)}.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:7px;padding:11px 15px;border-radius:999px;text-decoration:none;border:1px solid var(--line);background:#0d1117;font-size:14px;font-weight:650}.btn.primary{background:var(--accent);color:#111;border-color:var(--accent)}.btn:hover{transform:translateY(-1px)}.meta{margin-top:24px;color:var(--muted);font-size:13px}.section{padding:82px 0;border-bottom:1px solid var(--line)}.section p{color:#c8cdd4;max-width:930px}.section .big{font-size:22px;line-height:1.5;color:#d8d9d5}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{grid-column:span 4;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}.card.w6{grid-column:span 6}.card.w12{grid-column:span 12}.card p{margin:6px 0 0;color:#b6bdc7}.tag{display:inline-block;border:1px solid var(--line);padding:5px 8px;border-radius:999px;font-size:12px;color:#c8ced6;margin:2px 4px 2px 0}.accent{color:var(--accent)}.blue{color:var(--accent2)}.warn{border-left:3px solid var(--accent);padding:2px 0 2px 18px;color:#c9ced5;max-width:950px}.danger{border-left-color:var(--danger)}.arch{margin-top:30px;background:var(--panel2);border:1px solid var(--line);border-radius:22px;padding:24px;overflow:auto}.arch svg{min-width:930px;width:100%;height:auto}.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;margin-top:20px}.table{width:100%;border-collapse:collapse}.table th,.table td{text-align:left;padding:13px 14px;border-bottom:1px solid var(--line);white-space:nowrap}.table th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}.table tr:last-child td{border-bottom:none}.good{color:var(--accent);font-weight:800}.muted{color:var(--muted)}.code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#0d1117;border:1px solid var(--line);padding:16px 18px;border-radius:14px;overflow:auto;color:#cbd5e1}.metric{font-size:34px;font-weight:800;letter-spacing:-.04em;color:var(--accent)}.metriclabel{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.fail{display:grid;grid-template-columns:120px 1fr;gap:18px;padding:20px 0;border-top:1px solid var(--line)}.fail:first-of-type{border-top:0}.fail .num{font-size:34px;font-weight:800;color:#6f7784}.demo{height:720px;width:100%;border:1px solid var(--line);border-radius:18px;background:#fff}.artifact{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding:18px 0;border-top:1px solid var(--line)}.artifact:first-child{border-top:0}.artifact a{text-decoration:none;color:var(--accent)}.disabled{color:#69717d!important}.bib{white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:#cbd5e1;background:#0d1117;border:1px solid var(--line);border-radius:14px;padding:18px}.footer{padding:50px 0 70px;color:var(--muted);font-size:13px}@media(max-width:820px){.card,.card.w6{grid-column:span 12}.navlinks{display:none}.demo{height:560px}.fail{grid-template-columns:1fr}.hero{padding-top:64px}}
+</style>
+</head>
+<body>
+<div class="nav"><div class="navin"><div class="brand">Resutura</div><div class="navlinks"><a href="#idea">Idea</a><a href="#architecture">Architecture</a><a href="#experiments">Experiments</a><a href="#results">Results</a><a href="#demo">Demo</a><a href="#process">Process</a><a href="#artifacts">Artifacts</a></div></div></div>
+
+<header class="hero"><div class="wrap">
+<div class="eyebrow">01 · Flagship project · Learning from Failure for Reliable Agents</div>
+<h1>Resutura</h1>
+<p class="lead">Effect-semantic recovery for computer-use agents: deciding whether to verify, repair, rewind, compensate, preserve, or stop after the world has already changed.</p>
+<p class="heroresult"><b>Measured mechanism result:</b> in the bundled Chromium effect-semantics study, Resutura succeeds on committed misdirection and concurrent-change cases where Base / Retry / Verify / Rewind fail, while matching Verify on ambiguous commits and safe-aborting 100% of non-compensatable cases. <span class="muted">2 paired trials per method/scenario; deterministic planner; not a frontier-model benchmark.</span></p>
+<div class="buttons">
+<a class="btn primary" href="paper/Resutura_NeurIPS2026_Preprint.pdf">Paper</a>
+<a class="btn" href="paper/Resutura_NeurIPS2026_arXiv_Source.zip">arXiv Source</a>
+<a class="btn" href="docs/CODE_WALKTHROUGH.md">Code</a>
+<a class="btn" href="demo/index.html">Demo</a>
+<a class="btn" href="benchmark/README.md">Benchmark</a>
+<a class="btn" href="video/resutura_overview.mp4">Video</a>
+</div>
+<div class="meta">Aura Yavary · Research release · Evidence tiers are labeled explicitly throughout this page.</div>
+<p class="warn" style="margin-top:24px"><b>60-second takeaway:</b> Resutura is not another retry agent. It reasons about recovery after actions cross from reversible execution state into persistent shared-world effects, then chooses among verification, repair, rewind, compensation, preservation, and safe abort. The decisive open gate is real model × environment × harness × tool-contract evaluation.</p>
+</div></header>
+
+<section class="section" id="problem"><div class="wrap">
+<div class="eyebrow">02 · Why this problem matters</div><h2>Recovery is easy only when the world is reversible.</h2>
+<p class="big">A local checkpoint can restore an agent’s execution state without undoing the email it already sent, the record it already changed, or the shared artifact another actor edited while the agent was recovering.</p>
+<div class="grid">
+<div class="card"><h3>The problem</h3><p>Computer-use agents act across mixed state domains: local UI state, application state, shared state, and committed external effects.</p></div>
+<div class="card"><h3>Why it is hard</h3><p>The same failure signal can mean “nothing happened,” “it committed,” “it committed to the wrong target,” or “the world changed concurrently.”</p></div>
+<div class="card"><h3>Why generic recovery fails</h3><p>Blind retry can duplicate effects. Rewind can restore the agent while leaving the external world unchanged. Aggressive compensation can erase valid work by another actor.</p></div>
+</div>
+</div></section>
+
+<section class="section" id="idea"><div class="wrap">
+<div class="eyebrow">03 · Core idea</div><h2>A failed tool result does not tell you whether to retry. <span class="accent">The realized world state does.</span></h2>
+<p class="big">Resutura treats recovery as effect-state reconciliation. It separates rewindable local state from committed external state, records actor ownership and tool guarantees, then selects the smallest safe recovery semantics supported by observable evidence.</p>
+<p class="warn"><b>Novelty boundary:</b> Resutura does not claim to invent rollback, compensation, idempotency, causal repair, or verify-before-retry. The research hypothesis is the integration of recovery choice across heterogeneous realized effect classes and tool contracts in computer-use workflows.</p>
+<div><span class="tag">effect semantics</span><span class="tag">external side effects</span><span class="tag">ownership-aware compensation</span><span class="tag">tool contracts</span><span class="tag">safe abort</span></div>
+</div></section>
+
+<section class="section" id="architecture"><div class="wrap">
+<div class="eyebrow">04 · Architecture</div><h2>Policy proposes. Resutura verifies the world.</h2>
+<p>The action policy and recovery runtime are deliberately separated. The policy proposes the next action plus expected postconditions; the recovery runtime owns state verification and recovery semantics.</p>
+<div class="arch">
+<svg viewBox="0 0 1080 440" role="img" aria-label="Resutura architecture diagram">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#8992a0"/></marker></defs>
+<g font-family="Inter,system-ui" fill="#f5f3ed">
+<rect x="25" y="155" width="165" height="90" rx="18" fill="#11151c" stroke="#35404e"/><text x="108" y="188" text-anchor="middle" font-size="16" font-weight="700">MODEL / POLICY</text><text x="108" y="216" text-anchor="middle" font-size="13" fill="#aab1bc">action + expectation</text>
+<rect x="245" y="155" width="150" height="90" rx="18" fill="#11151c" stroke="#35404e"/><text x="320" y="188" text-anchor="middle" font-size="16" font-weight="700">EXECUTE</text><text x="320" y="216" text-anchor="middle" font-size="13" fill="#aab1bc">computer / tool</text>
+<rect x="450" y="155" width="175" height="90" rx="18" fill="#11151c" stroke="#35404e"/><text x="538" y="188" text-anchor="middle" font-size="16" font-weight="700">OBSERVE</text><text x="538" y="216" text-anchor="middle" font-size="13" fill="#aab1bc">realized joint state</text>
+<rect x="680" y="155" width="175" height="90" rx="18" fill="#11151c" stroke="#d8ff72"/><text x="768" y="188" text-anchor="middle" font-size="16" font-weight="700">EFFECT VERIFIER</text><text x="768" y="216" text-anchor="middle" font-size="13" fill="#d8ff72">match or divergence?</text>
+<rect x="900" y="125" width="155" height="150" rx="18" fill="#11151c" stroke="#35404e"/><text x="978" y="154" text-anchor="middle" font-size="14" font-weight="700">RECOVERY</text><text x="978" y="181" text-anchor="middle" font-size="12" fill="#aab1bc">verify</text><text x="978" y="201" text-anchor="middle" font-size="12" fill="#aab1bc">repair</text><text x="978" y="221" text-anchor="middle" font-size="12" fill="#aab1bc">rewind</text><text x="978" y="241" text-anchor="middle" font-size="12" fill="#aab1bc">compensate / stop</text>
+<line x1="190" y1="200" x2="240" y2="200" stroke="#8992a0" stroke-width="2" marker-end="url(#arrow)"/><line x1="395" y1="200" x2="445" y2="200" stroke="#8992a0" stroke-width="2" marker-end="url(#arrow)"/><line x1="625" y1="200" x2="675" y2="200" stroke="#8992a0" stroke-width="2" marker-end="url(#arrow)"/><line x1="855" y1="200" x2="895" y2="200" stroke="#8992a0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M978 280 C978 360, 540 365, 540 255" fill="none" stroke="#d8ff72" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="298" y="35" width="480" height="62" rx="16" fill="#0d1117" stroke="#35404e"/><text x="538" y="62" text-anchor="middle" font-size="14" font-weight="700">JOINT STATE + EFFECT LEDGER</text><text x="538" y="83" text-anchor="middle" font-size="12" fill="#aab1bc">local checkpoint · committed effects · actor ownership · protected invariants · tool contract</text>
+<line x1="538" y1="97" x2="538" y2="150" stroke="#8992a0" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="540" y="413" text-anchor="middle" font-size="13" fill="#8992a0">Offline counterfactual forks are diagnostic only and never used to choose the online recovery action.</text>
+</g></svg>
+</div>
+</div></section>
+
+<section class="section" id="contribution"><div class="wrap">
+<div class="eyebrow">05 · My contribution</div><h2>What I designed and built.</h2>
+<div class="grid">
+<div class="card w6"><h3>Research framing</h3><p>Reframed recovery around the boundary between rewindable execution state and persistent external effects; narrowed the claim after related-work audits rather than relabeling prior work as novelty.</p></div>
+<div class="card w6"><h3>Recovery runtime</h3><p>Designed the effect ledger, ownership-aware reconciliation, protected invariants, forward compensation, safe-abort semantics, and provider-neutral policy boundary.</p></div>
+<div class="card w6"><h3>Evaluation methodology</h3><p>Built simulator and Chromium effect-semantics suites, verification-aware and rewind baselines, tool-contract factorization, fault injection, deterministic traces, and evidence-tier labeling.</p></div>
+<div class="card w6"><h3>Research engineering</h3><p>Implemented clean-release tests, reproducible experiment registry, source fingerprints, artifact manifest, trajectory viewer, paper, homepage, benchmark index, and falsification gates.</p></div>
+</div>
+<p class="warn danger"><b>Authorship/provenance note:</b> public authorship claims should match the work you personally reviewed, understood, and can defend. This repository was developed with AI assistance; before external publication, audit the implementation and experimental evidence end-to-end.</p>
+</div></section>
+
+<section class="section" id="experiments"><div class="wrap">
+<div class="eyebrow">06 · Experiments</div><h2>Designed to expose when simpler recovery is enough.</h2>
+<div class="grid">
+<div class="card"><h3>Tasks / fault classes</h3><p>Compensable misdirection, ambiguous commit, concurrent valid change + misdirection, non-compensatable committed effect, plus browser-local faults.</p></div>
+<div class="card"><h3>Baselines</h3><p>Base, blind Retry, Verification-Aware, Rewind, and Resutura. Strong tool contracts are separately toggled.</p></div>
+<div class="card"><h3>Evidence tiers</h3><p>40 simulator trials/method/scenario; Chromium mechanism study with 2 paired trials/method/scenario; recorded-policy boundary replay.</p></div>
+<div class="card"><h3>Formal ablations</h3><p>Remove compensation, contract awareness, or effect ownership one at a time; a separate readback × idempotency matrix isolates reliability supplied by the tool contract.</p><p><a class="accent" href="evidence/REAL_EVAL_TABLES.md">Ablation results →</a></p></div>
+<div class="card"><h3>Integrity safeguards</h3><p>Fresh fault object per method/run, no online oracle leakage, deterministic IDs/timestamps, source fingerprints, raw trajectories.</p></div>
+<div class="card"><h3>Next falsification gate</h3><p>Model × environment × recovery harness × tool contract. Reject the stronger claim if a simpler transactional/verification baseline matches it at lower cost.</p></div>
+</div>
+</div></section>
+
+<section class="section" id="results"><div class="wrap">
+<div class="eyebrow">07 · Results</div><h2>Chromium mechanism-transfer results.</h2>
+<p class="warn"><b>Evidence boundary:</b> real Chromium DOM, deterministic planner, two paired trials per method/scenario. These numbers are mechanism evidence, not frontier-model capability or SOTA evidence.</p>
+<div class="tablewrap"><table class="table"><thead><tr><th>Scenario</th><th>Base</th><th>Retry</th><th>Verify</th><th>Rewind</th><th>Resutura</th></tr></thead><tbody>
+<tr><td>Wrong-target committed effect</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td class="good">100%</td></tr>
+<tr><td>Concurrent valid change + wrong effect</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td class="good">100%</td></tr>
+<tr><td>Ambiguous commit</td><td class="good">100%*</td><td>0%</td><td class="good">100%</td><td>0%</td><td class="good">100%</td></tr>
+<tr><td>Non-compensatable committed effect</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td><span class="good">100% safe abort</span></td></tr>
+</tbody></table></div>
+<p class="muted">*Base gets the final world state right by not retrying the lost acknowledgement; it has no evidence that the commit occurred. This counterexample is intentionally retained.</p>
+<div class="grid" style="margin-top:22px"><div class="card"><div class="metric">100%</div><div class="metriclabel">Misdirected committed effects reconciled</div></div><div class="card"><div class="metric">100%</div><div class="metriclabel">Concurrent valid state preserved in target scenario</div></div><div class="card"><div class="metric">100%</div><div class="metriclabel">Safe abort in non-compensatable scenario</div></div></div>
+<h3 style="margin-top:28px">Recovery / latency / cost accounting</h3>
+<div class="tablewrap"><table class="table"><thead><tr><th>Metric</th><th>Measured value</th><th>Interpretation</th></tr></thead><tbody>
+<tr><td>Recovery success / attempt</td><td class="good">100% on compensable Chromium target cases</td><td>All triggered Resutura recoveries in those cases restored the required world state.</td></tr>
+<tr><td>Recovery overhead</td><td>2 additional actions</td><td>For committed misdirection: retract wrong effect, then publish intended effect; verification follows in the runtime.</td></tr>
+<tr><td>Progress preservation</td><td class="good">100% in target concurrent-change case</td><td>Protected valid external state remained intact.</td></tr>
+<tr><td>Model-provider cost</td><td>$0 in bundled study</td><td>Deterministic planner; this is not a cost comparison against model-backed agents.</td></tr>
+<tr><td>Model latency</td><td>Not measured</td><td>No external model calls occur in the bundled Chromium study; reporting a model-latency number would be misleading.</td></tr>
+</tbody></table></div>
+<p class="muted">The next model-backed gate must report end-to-end latency, provider cost, success-per-dollar, and recovery overhead under identical task/fault seeds.</p>
+<h3 style="margin-top:28px">Component ablation — deterministic simulator, 40 paired trials/cell</h3>
+<div class="tablewrap"><table class="table"><thead><tr><th>Variant</th><th>Misdirection</th><th>Ambiguous commit</th><th>Concurrent + misdirection</th><th>Non-compensatable</th></tr></thead><tbody>
+<tr><td>Full Resutura</td><td class="good">100%</td><td class="good">100%</td><td class="good">100%</td><td class="good">100% safe abort</td></tr>
+<tr><td>− compensation</td><td>0%</td><td class="good">100%</td><td>0%</td><td class="good">100% safe abort</td></tr>
+<tr><td>− contract awareness</td><td class="good">100%</td><td>0%</td><td class="good">100%</td><td class="good">100% safe abort</td></tr>
+<tr><td>− effect ownership</td><td class="good">100%</td><td class="good">100%</td><td>0%</td><td class="good">100% safe abort</td></tr>
+</tbody></table></div>
+<p class="muted">These ablations isolate mechanism necessity inside the deterministic testbed; they are not model-capability estimates. <a class="accent" href="evidence/REAL_EVAL_TABLES.md">Full ablation report</a> · <a class="accent" href="evidence/REAL_EVAL_TABLES.md">uncertainty report</a></p>
+</div></section>
+
+<section class="section" id="failures"><div class="wrap">
+<div class="eyebrow">08 · Failure analysis</div><h2>What failed, why, and how recovery changed.</h2>
+<div class="fail"><div class="num">01</div><div><h3>Wrong-target committed effect</h3><p>The agent intends <code>research-team</code>, but the publication commits to <code>wrong-channel</code>. Rewind cannot erase the external effect. Resutura identifies the agent-owned ledger entry, retracts it, publishes once to the intended target, and re-verifies protected progress. <b>Measured recovery overhead: 2 actions.</b></p></div></div>
+<div class="fail"><div class="num">02</div><div><h3>Acknowledgement lost after commit</h3><p>The write commits, but the caller sees a timeout. Blind retry duplicates the intended effect; Resutura and the Verification-Aware baseline use authoritative readback and continue without replay. This is deliberately retained as a case where Resutura does not uniquely win.</p></div></div>
+<div class="fail"><div class="num">03</div><div><h3>Concurrent valid state + agent misdirection</h3><p>Another actor publishes a valid coordinator note before the agent's own publication is misdirected. Ownership-aware compensation repairs only the agent-owned damage and preserves the external update. Removing effect ownership drops task success to 0% in the formal ablation.</p></div></div>
+<div class="fail"><div class="num">04</div><div><h3>Non-compensatable committed effect</h3><p>No safe inverse exists. Resutura returns <code>R7_safe_abort</code>, preserves recoverable prior progress, and refuses to relabel the task as successful.</p></div></div>
+<p><a class="accent" href="failure_gallery/README.md">Open failure gallery with raw-evidence pointers →</a></p>
+<h3 style="margin-top:32px">Benchmark failures found during development</h3>
+<div class="grid">
+<div class="card"><h3>Stateful fault reuse</h3><p>Fresh immutable fault instances are now generated per method/run.</p></div>
+<div class="card"><h3>Concurrent-state grader bug</h3><p>Grading now rejects unreconciled agent-owned damage without deleting valid external state.</p></div>
+<div class="card"><h3>Rollback-domain bug</h3><p>Server-side idempotency state now survives local checkpoint restore.</p></div>
+<div class="card"><h3>Offline counterfactual predicate bug</h3><p><code>exists</code> postconditions are now evaluated correctly; online policy was never allowed to consume fork outcomes.</p></div>
+</div>
+</div></section>
+
+<section class="section" id="demo"><div class="wrap">
+<div class="eyebrow">09 · Interactive demo</div><h2>Inspect a trajectory, not just a success label.</h2>
+<p>The bundled viewer exposes actions, expected versus observed state, failure events, effect ledger entries, recovery choice, and final verification.</p>
+<div class="buttons" style="margin-bottom:22px"><a class="btn primary" href="demo/index.html">Open full trajectory viewer</a><a class="btn" href="video/resutura_overview.mp4">Watch 24s overview</a></div>
+<iframe class="demo" src="../../runs/demo.html" title="Resutura interactive trajectory demo"></iframe>
+</div></section>
+
+<section class="section" id="scaling"><div class="wrap">
+<div class="eyebrow">10 · Scaling</div><h2>What scales today — and what is still unmeasured.</h2>
+<div class="tablewrap"><table class="table"><thead><tr><th>Axis</th><th>Current evidence</th><th>Next gate</th></tr></thead><tbody>
+<tr><td>Model size</td><td>Not measured; deterministic policy/replay only</td><td>Small / medium / frontier model comparison</td></tr>
+<tr><td>Task horizon</td><td>Multi-step synthetic + browser workflows</td><td>Horizon buckets on real CUA benchmark</td></tr>
+<tr><td>Tool count</td><td>Browser/document/spreadsheet-style state abstractions</td><td>Multi-tool real apps with heterogeneous contracts</td></tr>
+<tr><td>Cost / latency</td><td>Runtime steps recorded; no model-dollar claim</td><td>Success-per-dollar and recovery latency with real providers</td></tr>
+<tr><td>Robustness</td><td>Four core effect classes + contract matrix</td><td>Held-out faults, UI drift, concurrency, authorization failures</td></tr>
+</tbody></table></div>
+</div></section>
+
+<section class="section" id="safety"><div class="wrap">
+<div class="eyebrow">11 · Safety / limitations</div><h2>Some failures should not be “recovered.”</h2>
+<div class="grid">
+<div class="card"><h3>Irreversible actions</h3><p>If no safe compensator exists, Resutura safe-aborts. It does not relabel an impossible reversal as task success.</p></div>
+<div class="card"><h3>Permission boundaries</h3><p>Real deployments need authorization checks before compensation, rollback, deletion, or cross-account changes.</p></div>
+<div class="card"><h3>Human escalation</h3><p>High-impact or ambiguous state transitions should escalate when evidence is insufficient to choose a safe recovery semantics.</p></div>
+<div class="card"><h3>Current limitation</h3><p>No frontier-model, OSWorld, production security, or SOTA claim. Chromium evidence uses a deterministic planner.</p></div>
+<div class="card"><h3>Tool-contract dependence</h3><p>Readback and idempotency can eliminate the need for sophisticated runtime recovery in some failure classes.</p></div>
+<div class="card"><h3>Threat model</h3><p>The current suite focuses on accidental divergence and state semantics, not malicious tool servers, prompt injection, or compromised credentials.</p></div>
+</div>
+</div></section>
+
+<section class="section" id="deepdive"><div class="wrap">
+<div class="eyebrow">12 · Technical deep dive</div><h2>Everything needed to audit the system.</h2>
+<div class="grid">
+<div class="card w6"><h3>Engineering report</h3><p>State model, recovery semantics, baselines, evidence tiers, reproducibility, safety boundary, and next empirical gate.</p><p><a class="accent" href="docs/ENGINEERING_REPORT.md">Read engineering report →</a></p></div>
+<div class="card w6"><h3>Eval methodology</h3><p>Experiment registry, evidence ledger, threat model, related-work map, and release checklist are included as first-class artifacts.</p><p><a class="accent" href="docs/REPRODUCTION_MATRIX.md">Experiment registry →</a></p></div>
+<div class="card w6"><h3>Policy interface</h3><p>Provider-neutral JSON boundary isolates action selection from recovery. Recorded replay validates integration without pretending to be model evidence.</p><p><a class="accent" href="docs/CODE_WALKTHROUGH.md">Policy interface →</a></p></div>
+<div class="card w6"><h3>Statistics / uncertainty</h3><p>Wilson intervals and paired-seed contrasts are reported with an explicit warning that deterministic mechanism repeats are not frontier-model uncertainty estimates.</p><p><a class="accent" href="evidence/REAL_EVAL_TABLES.md">Statistical report →</a></p></div>
+<div class="card w6"><h3>Dataset / reproducibility</h3><p>160 public diagnostic task/fault items and 800 raw trajectories are packaged as JSONL/GZIP with schema, source hash, and public split manifest.</p><p><a class="accent" href="dataset/manifest.json">Dataset manifest →</a></p></div>
+<div class="card w6"><h3>Claim → evidence map</h3><p>Every strong public claim is tied to raw runs or generated evidence with SHA-256 pointers, plus an explicit list of unsupported claims.</p><p><a class="accent" href="docs/CLAIM_EVIDENCE_MAP.md">Claim evidence map →</a></p></div>
+<div class="card w6"><h3>Interview defense</h3><p>Questions you should be able to answer from the code: why rewind is insufficient, when verification is enough, what ownership changes, and what would falsify the hypothesis.</p><p><a class="accent" href="docs/INTERVIEW_DEFENSE_GUIDE.md">Technical defense guide →</a></p></div>
+<div class="card w6"><h3>Code walkthrough</h3><p>Reviewer path from the execution loop through rollback boundaries, verification, diagnosis, recovery selection, policy boundary, and adversarial tests.</p><p><a class="accent" href="docs/CODE_WALKTHROUGH.md">Walk the code →</a></p></div>
+<div class="card w6"><h3>Reproduction matrix</h3><p>Every study mapped to entrypoint, evidence tier, dependencies, trial counts, determinism, and the claim it can actually support.</p><p><a class="accent" href="docs/REPRODUCTION_MATRIX.md">Reproduction matrix →</a></p></div>
+<div class="card w6"><h3>Open questions</h3><p>Model-backed falsification gates, ambiguous ownership, failing compensators, permissions, and stronger tool contracts.</p><p><a class="accent" href="docs/OPEN_RESEARCH_QUESTIONS.md">Open research roadmap →</a></p></div>
+<div class="card w6"><h3>Post-training</h3><p>Not part of Project 2. Recovery traces are deliberately structured so Project 3 / Flywheel-RL can later turn failures and corrections into training data.</p></div>
+</div>
+</div></section>
+
+<section class="section" id="artifacts"><div class="wrap">
+<div class="eyebrow">13 · Artifacts</div><h2>Paper, arXiv source, code, evidence, and communication artifacts.</h2>
+<div class="artifact"><div><h3>Paper</h3><p>NeurIPS-style arXiv preprint: Resutura: Effect-Semantic Recovery for Computer-Use Agents.</p></div><span><a href="paper/Resutura_NeurIPS2026_Preprint.pdf">PDF</a> · <a href="paper/Resutura_NeurIPS2026_arXiv_Source.zip">arXiv source</a></span></div>
+<div class="artifact"><div><h3>Code</h3><p>Full research release with package, experiments, tests, browser harness, and audit scripts.</p></div><a href="docs/CODE_WALKTHROUGH.md">README →</a></div>
+<div class="artifact"><div><h3>GitHub</h3><p>Not published from this local release. No fake repository URL is inserted.</p></div><span class="disabled">Publication pending</span></div>
+<div class="artifact"><div><h3>Benchmark</h3><p>Evidence-tier index linking simulator, tool-contract, Chromium, and policy-boundary studies.</p></div><a href="benchmark/README.md">Benchmark index →</a></div>
+<div class="artifact"><div><h3>Dataset / traces</h3><p>160 task/fault records + 800 raw trajectories, with schema, manifest, public analysis splits, and dataset card.</p></div><span><a href="dataset/tasks.jsonl">Tasks</a> · <a href="dataset/trajectories.jsonl.gz">Trajectories</a> · <a href="dataset/DATASET_CARD.md">Card</a></span></div>
+<div class="artifact"><div><h3>Ablations + statistics</h3><p>Formal component ablations and uncertainty accounting for the deterministic mechanism suite.</p></div><span><a href="evidence/REAL_EVAL_TABLES.md">Ablations</a> · <a href="evidence/REAL_EVAL_TABLES.md">Statistics</a></span></div>
+<div class="artifact"><div><h3>Interactive demo</h3><p>Trajectory-level viewer with failure and recovery evidence.</p></div><a href="demo/index.html">Open demo →</a></div>
+<div class="artifact"><div><h3>Video</h3><p>24-second visual overview of the problem, recovery semantics, and evidence boundary.</p></div><a href="video/resutura_overview.mp4">Watch video →</a></div>
+<div class="artifact"><div><h3>Technical report</h3><p>Engineering architecture, methodology, safety, and reproducibility details.</p></div><a href="docs/ENGINEERING_REPORT.md">Read report →</a></div>
+<div class="artifact"><div><h3>Review paths</h3><p>Separate 60-second recruiter, 5-minute research, 15-minute systems, and reproducibility audit paths.</p></div><a href="docs/REPRODUCTION_MATRIX.md">Choose a review path →</a></div>
+<div class="artifact"><div><h3>Blog post</h3><p>Rewinding the Agent Is Not Rewinding the World.</p></div><a href="blog/RESUTURA_BLOG.md">Read post →</a></div>
+<div id="process" style="margin-top:54px;padding-top:36px;border-top:1px solid var(--line)">
+<div class="eyebrow">Inside the research process</div><h2>The project did not move from idea → perfect implementation → perfect result.</h2>
+<p class="big">The Evidence Layer preserves the parts a polished homepage normally hides: failed assumptions, evaluator bugs, baseline wins, design reversals, negative results, and the decisions they caused.</p>
+<div class="grid" style="margin-top:26px">
+<div class="card"><div class="metric">12</div><div class="metriclabel">experiment / maturation entries</div><p>Hypothesis → setup → result → interpretation → next decision.</p></div>
+<div class="card"><div class="metric">12</div><div class="metriclabel">documented failures / false starts</div><p>Including oracle leakage, unsafe compensation, grader bugs, packaging and reproducibility failures.</p></div>
+<div class="card"><div class="metric">10</div><div class="metriclabel">major design decisions</div><p>Alternatives, evidence, trade-offs, and outcomes—not retrospective storytelling.</p></div>
+<div class="card w6"><h3>Experiment journal</h3><p>Read the sequence of experiments and maturation steps, including results that narrowed the claim instead of strengthening it.</p><p><a class="accent" href="evidence/README.md">View experiment journal →</a></p></div>
+<div class="card w6"><h3>What didn’t work</h3><p>Actual failed assumptions and benchmark bugs, what they would have invalidated, and what changed afterward.</p><p><a class="accent" href="evidence/FAILED_EXPERIMENTS.md">Failure log →</a></p></div>
+<div class="card w6"><h3>Decision log</h3><p>Why external effects are outside the rewind domain, why Verify remains a baseline, why safe-abort is a positive outcome, and why counterfactual replay is analysis-only.</p><p><a class="accent" href="evidence/DECISION_LOG.md">Decision log →</a></p></div>
+<div class="card w6"><h3>Reproduce / inspect</h3><p>Executed eval tables, raw-run hashes, ablations, qualitative traces, configs, and the authentic Git-history note.</p><p><a class="accent" href="evidence/README.md">Open Evidence Layer →</a></p></div>
+</div>
+<div class="warn" style="margin-top:26px"><b>History policy:</b> pre-v1.0 Git commits are not reconstructed. The release preserves the real version timeline and starts authentic incremental Git history from the Evidence Layer pass forward.</div>
+</div>
+</div></section>
+
+<section class="section" id="citation"><div class="wrap">
+<div class="eyebrow">14 · Citation</div><h2>Cite the evidence tier you actually use.</h2>
+<p><b>Author:</b> Aura Yavary · <b>Year:</b> 2026</p>
+<div class="bib">@misc{yavary2026resutura,
+  title  = {Resutura: Effect-Semantic Recovery for Computer-Use Agents},
+  author = {Yavary, Aura},
+  year   = {2026},
+  note   = {Research release and technical report},
+}</div>
+<div class="buttons"><a class="btn" href="citation/resutura.bib">BibTeX file</a><a class="btn" href="citation/CITATION.md">Citation notes</a></div>
+</div></section>
+
+
+
+<footer class="footer"><div class="wrap">Resutura · Aura Yavary · Research release. No SOTA, production-safety, or frontier-model superiority claim is made by this release.</div></footer>
+</body></html>

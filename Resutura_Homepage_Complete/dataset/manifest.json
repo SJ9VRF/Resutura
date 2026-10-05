@@ -1,0 +1,12 @@
+{
+  "public_split_warning": "These are public diagnostic splits, not hidden evaluation data.",
+  "source_run": "runs/effect_semantics_suite.json.gz",
+  "source_sha256": "930041de1824c75e397717b50853a6ab994e992a8a29d28ba335e46d84e99db4",
+  "task_count": 160,
+  "task_split_counts": {
+    "dev": 36,
+    "test": 124
+  },
+  "trajectory_count": 800,
+  "version": "1.0.0"
+}
